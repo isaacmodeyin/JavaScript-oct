@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table id="myTable">
+</table>
+
+<script>
+let ame = "samuel";
+let surname = "olobayo";
+let middlename = "olowotubi";
+let father = "okuta";
+
+let obj = {ame, surname, middlename, father};
+
+let table = document.getElementById("myTable");
+
+for (let key in obj) {
+  let row = table.insertRow();
+  let cell1 = row.insertCell();
+  let cell2 = row.insertCell();
+  cell1.innerHTML = key;
+  cell2.innerHTML = obj[key];
+}
+</script>
+
+</body>
+</html>
